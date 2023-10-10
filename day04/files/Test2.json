@@ -1,12 +1,4 @@
-{
-   "A01": {
-      "name": "James",
-      "gender": "Male",
-      "gpa": 3.5,
-      "subjects": [
-         "Math",
-         "Physics"
-      ]
+{"name": "Aaron King", "age": 45, "address": {"street": "10 Downing Street", "city": "London"}, "phones": ["+44 1234567", "+44 2345678"]}    ]
    },
    "A02": {
       "name": "Hazel",
