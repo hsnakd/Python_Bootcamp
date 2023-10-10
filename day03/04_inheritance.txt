@@ -1,0 +1,42 @@
+Inheritance
+    • Used for creating Is A relationship among the classes:
+        • Inheritance establishes an "Is A" relationship between classes, indicating that one class is a specialized version of another.
+    • Allows one class to inherit the variables and methods from other class(es):
+        • A subclass can inherit attributes and methods from a superclass, promoting code reuse.
+    • One or more classes can be inherited by a class by specifying the parent class(es) in parentheses after the class name:
+        • Syntax: class Subclass(ParentClass1, ParentClass2, ...)
+    • Animal is called SUPER class and the Dog is called SUB class:
+        • Alternatively, Animal is called PARENT class, and the Dog is called CHILD class.
+
+What is Inherited to SubClasses:
+    • All the accessible variables & methods:
+        • Public and protected variables and methods are inherited.
+    • Private variables and methods are not inherited:
+        • Encapsulation prevents the inheritance of private members.
+    • Constructors are not inherited:
+        • Each subclass needs its own constructor.
+
+Super keyword
+    • The super-function refers to an object’s superclass (Parent):
+        • super() can be used to call a superclass’s constructor and methods.
+
+Types of Inheritance:
+    Single Inheritance
+        • Subclasses inherit the features of one superclass
+
+    Hierarchical Inheritance
+        • One class serves as a superclass for more than one subclass
+
+    Multilevel Inheritance
+        • Subclass inherits from a superclass and the subclass also acts as the Super Class to the other class
+
+    Multiple Inheritance (Java doesn't support)
+        • One class can have more than one superclass and inherit features from all parent classes
+
+Method Overriding:
+    • Giving different implementations to the method:
+        • Allows a subclass to provide a specific implementation for a method.
+    • Must take place in a subclass:
+        • Overrides a method from the superclass in the subclass.
+    • Less memory usage and improves re-usability:
+        • Reduces redundancy and enhances the flexibility of the code.

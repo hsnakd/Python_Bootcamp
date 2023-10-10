@@ -1,0 +1,7 @@
+Character           Description
+[ab]                Returns a match where one of the specified characters is presented
+[a-z]               Returns a match for any lower-case characters between a and z
+[0-9]               Returns a match for any digit between 0 and 9
+[^ab]               Returns a match for any characters except for a and b
+[1-8][0-9]          Returns a match for any two-digit numbers from 10 and 89
+[a-zA-z]            Returns a match for any character alphabetically

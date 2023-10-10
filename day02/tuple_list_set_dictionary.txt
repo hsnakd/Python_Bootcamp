@@ -1,0 +1,147 @@
+┌────────────┬───────────────────────┬────────────────────────┬──────────────────────┬──────────────────────────────────────────────────┐
+│            │       Tuple           │        List            │        Set           │              Dictionary                          │
+├────────────┼───────────────────────┼────────────────────────┼──────────────────────┼──────────────────────────────────────────────────┤
+│ Syntax     │ (1, 2, 3, 'hello')    │   [1, 2, 3, 'hello']   │	 {1, 2, 3, 'hello'}  │    {'key1': 1, 'key2': 2, 'key3': 'hello'}       │
+├────────────┼───────────────────────┼────────────────────────┼──────────────────────┼──────────────────────────────────────────────────┤
+│ Type       │       tuple()         │        list()          │        set()         │               dict()                             │
+├────────────┼───────────────────────┼────────────────────────┼──────────────────────┼──────────────────────────────────────────────────┤
+│ Size       │       Fixed           │        Dynamic         │        Dynamic       │               Dynamic                            │
+├────────────┼───────────────────────┼────────────────────────┼──────────────────────┼──────────────────────────────────────────────────┤
+│ Mutability │     Immutable         │        Mutable         │        Mutable       │               Mutable                            │
+├────────────┼───────────────────────┼────────────────────────┼──────────────────────┼──────────────────────────────────────────────────┤
+│ Ordered    │         ✅            │           ✅           │          ❌         │                ❌                                │
+├────────────┼───────────────────────┼────────────────────────┼──────────────────────┼──────────────────────────────────────────────────┤
+│ Duplicate  │         ✅            │         ✅             │          ❌         │        Keys must be unique                       │
+├────────────┼───────────────────────┼────────────────────────┼──────────────────────┼──────────────────────────────────────────────────┤
+│ Indexing   │         ✅            │         ✅             │          ❌         │         ✅ (Key-based)                           │
+├────────────┼───────────────────────┼────────────────────────┼──────────────────────┼──────────────────────────────────────────────────┤
+│ Sorting    │         ❌            │         ✅             │          ❌         │         ✅ (Keys can be sorted)                  │
+├────────────┼───────────────────────┼────────────────────────┼──────────────────────┼──────────────────────────────────────────────────┤
+│ Reversing  │         ❌            │         ✅             │          ❌         │                ❌                                │
+├────────────┼───────────────────────┼────────────────────────┼──────────────────────┼──────────────────────────────────────────────────┤
+│ Count      │         ✅            │         ✅             │          ❌         │                ❌                                │
+├────────────┼───────────────────────┼────────────────────────┼──────────────────────┼──────────────────────────────────────────────────┤
+│ Performance│       Faster          │        Slower          │        Slower        │              Slower                              │
+└────────────┴───────────────────────┴────────────────────────┴──────────────────────┴──────────────────────────────────────────────────┘
+
+
+│───────────|───────────────────────|────────────────────────|──────────────────────|──────────────────────────────────────────────────│
+│           │       Tuple           │        List            │        Set           │              Dictionary                          │
+│-----------|-----------------------|------------------------|----------------------|--------------------------------------------------│
+│Syntax	    |   (1, 2, 3, 'hello')  |   [1, 2, 3, 'hello']   |	{1, 2, 3, 'hello'}  |    {'key1': 1, 'key2': 2, 'key3': 'hello'}       │
+│-----------|-----------------------|------------------------|----------------------|--------------------------------------------------│
+│Type 	    |   tuple()             |   List()               |	set()               |    {}                                            │
+│-----------|-----------------------|------------------------|----------------------|--------------------------------------------------│
+│Size Fixed	|   ✅	                |   ❌	                 |     ❌	            |     ❌	                                       │
+│-----------|-----------------------|------------------------|----------------------|--------------------------------------------------│
+│Mutability |   ❌	                |   ✅	                 |     ❌	            |     ✅	                                       │
+│-----------|-----------------------|------------------------|----------------------|--------------------------------------------------│
+│Ordered	|   ✅	                |   ✅	                 |     ❌	            |     ❌	                                       │
+│-----------|-----------------------|------------------------|----------------------|--------------------------------------------------│
+│Duplicate	|   ✅	                |   ✅	                 |     ❌	            |     Keys must be unique                          │
+│-----------|-----------------------|------------------------|----------------------|--------------------------------------------------│
+│Indexing	|   ✅	                |   ✅	                 |     ❌	            |     ✅	(Key-based)                            │
+│-----------|-----------------------|------------------------|----------------------|--------------------------------------------------│
+│Sorting	|   ❌	                |   ✅	                 |     ❌	            |     ✅	(Keys can be sorted)                   │
+│-----------|-----------------------|------------------------|----------------------|--------------------------------------------------│
+│Reversing  |   ❌	                |   ✅	                 |     ❌	            |     ❌	                                       │
+│-----------|-----------------------|------------------------|----------------------|--------------------------------------------------│
+│Count	    |   ✅	                |   ✅                   |     ❌	            |     ❌	                                       │
+│-----------|-----------------------|------------------------|----------------------|--------------------------------------------------│
+│Performance|   Faster              |   Slower	             |     Slower	        |    Slower                                        │
+│───────────|───────────────────────|────────────────────────|──────────────────────|──────────────────────────────────────────────────│
+
+TODO: Tuple:
+
+Definition:                 An ordered and unchangeable (immutable) collection of elements.
+Syntax:                     Created using parentheses (()) with elements separated by commas.
+Creation:                   You can create a tuple using the tuple() function.
+Empty Data Structure:       An empty tuple is made with t = ().
+Order:                      Elements have a specific order and can be accessed using integer-based indices.
+Duplicate Data:             Allows duplicate elements.
+Indexing:                   Supports indexing and slicing.
+Addition:                   Being immutable, new data cannot be added.
+Deletion:                   Cannot be modified or deleted after creation.
+Sorting:                    Sorting is not applicable.
+Search:                     Searching is possible using methods like index().
+
+my_tuple = (1, 2, 3, 'hello')
+
+Characteristics:
+Immutable: Elements cannot be added, removed, or modified after creation.
+Ordered: Elements have a specific order and can be accessed by index.
+Can contain elements of different data types.
+
+
+TODO: List:
+
+Definition:                 An ordered and changeable collection of elements.
+Syntax:                     Created using square brackets ([]) with elements separated by commas.
+Creation:                   You can create a list using the list() function or by assigning values within square brackets.
+Empty Data Structure:       An empty list is made with l = [].
+Order:                      Elements are in a specific order and can be accessed using integer-based indices starting from 0.
+Duplicate Data:             Allows duplicate elements.
+Indexing:                   Supports indexing and slicing.
+Addition:                   New items can be added using the append() method.
+Deletion:                   Elements can be removed using methods like pop() or remove().
+Sorting:                    Can be sorted using the sort() method.
+Search:                     Searching is possible using methods like index().
+
+my_list = [1, 2, 3, 'hello']
+
+Characteristics:
+Mutable: Elements can be added, removed, or modified after creation.
+Ordered: Elements have a specific order and can be accessed by index.
+Can contain elements of different data types.
+
+
+TODO: Set:
+
+Definition:                 An unordered and unindexed collection of unique elements.
+Syntax:                     Created using curly braces ({}) or the set() constructor.
+Creation:                   You can create a set using the set() function.
+Empty Data Structure:       An empty set is made with s = set().
+Order:                      Elements have no specific order.
+Duplicate Data:             Does not allow duplicate elements.
+Indexing:                   Does not support indexing or slicing.
+Addition:                   New elements can be added using the add() method.
+Deletion:                   Elements can be removed using methods like remove() or discard().
+Sorting:                    Sets are unordered, so sorting is not advised.
+Search:                     Searching is not applicable due to the lack of indexing.
+
+my_set = {1, 2, 3, 'hello'}
+
+Characteristics:
+Unordered: Elements have no specific order, and indexing is not supported.
+Unique: All elements must be unique; duplicates are automatically removed.
+Mutable: Elements can be added or removed after creation.
+
+
+TODO: Dictionary:
+
+Definition:                 An unordered collection of key-value pairs.
+Syntax:                     Created using curly braces ({}) with key-value pairs separated by colons.
+Creation:                   You can create a dictionary using the dict() function.
+Empty Data Structure:       An empty dictionary is made with d = {}.
+Order:                      In Python 3.7 and later, maintains the insertion order; in earlier versions, order is not guaranteed.
+Duplicate Data:             Keys must be unique, but values can be duplicated.
+Indexing:                   Uses keys for indexing, not integer-based indices.
+Addition:                   New key-value pairs can be added using the update() method.
+Deletion:                   Key-value pairs can be removed using the pop() or del statements.
+Sorting:                    Sorting is possible based on keys using the sorted() method.
+Search:                     Searching is done based on keys using methods like get() or directly using square brackets.
+
+my_dict = {'key1': 1, 'key2': 2, 'key3': 'hello'}
+
+Characteristics:
+Unordered: Key-value pairs have no specific order.
+Keys are unique: Each key in a dictionary must be unique.
+Mutable: Values associated with keys can be modified, and new key-value pairs can be added.
+
+
+TODO: In summary:
+
+Use a tuple when you have a fixed collection of elements that shouldn't be modified.
+Use a list when you need a mutable, ordered collection of elements.
+Use a set when you need an unordered collection of unique elements.
+Use a dictionary when you need an unordered collection of key-value pairs, and you want to be able to look up values by their associated keys.

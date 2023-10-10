@@ -1,0 +1,9 @@
+Character       Description                                         Example
+.               Any character except newline                        ‘py…n’
+^               Starts with                                         ‘^Py’
+$               Ends with                                           ‘.com$’
+*               Zero or more occurrences                            'gm.*l’
++               One or more occurrences                             ‘ya.+o
+?               Zero or one occurrences                             ‘pyth?n’
+{}              Exactly the specified number of occurrences         ‘py{3}n’
+|               Either or                                           ‘^a|A’

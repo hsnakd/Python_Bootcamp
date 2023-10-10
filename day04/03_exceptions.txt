@@ -1,0 +1,100 @@
+
+Exception Handling
+    • To prevent exceptions from crashing our program, we must write code that detects and handles them
+    try
+        {}
+    except
+        {}
+
+Exception Handling – try & except
+    • To handle an exception, we can use try & except blocks
+        try:
+            #   try block statements
+        except:
+            #   except block statements
+
+    • Multiple except blocks can be given if we specify the type of exception in each except block
+        try:
+            #   try block statements
+        except:
+            #   except block statements
+        else:
+            #   else block statements
+
+Exception Handling – else
+    • An optional block that can be given after the except block
+    • Gets executed if there is no exception occurred in try block
+
+
+Exception Handling – finally
+    • An optional block that can be given after the last block
+    • Always executed after try & except blocks whether an exception occurs or not
+
+Raise an Exception
+    • We can choose to manually throw an exception if a condition occurs
+    • The raise keyword is used for throwing an exception
+
+
+
+BaseException
+├── SystemExit
+├── KeyboardInterrupt
+├── GeneratorExit
+├── Exception
+│   ├── StopIteration
+│   ├── StopAsyncIteration
+│   ├── ArithmeticError
+│   │   ├── FloatingPointError
+│   │   ├── OverflowError
+│   │   └── ZeroDivisionError
+│   ├── AssertionError
+│   ├── AttributeError
+│   ├── BufferError
+│   ├── EOFError
+│   ├── ImportError
+│   │   ├── ModuleNotFoundError
+│   ├── LookupError
+│   │   ├── IndexError
+│   │   └── KeyError
+│   ├── MemoryError
+│   ├── NameError
+│   │   ├── UnboundLocalError
+│   ├── OSError
+│   │   ├── BlockingIOError
+│   │   ├── ChildProcessError
+│   │   ├── ConnectionError
+│   │   │   ├── BrokenPipeError
+│   │   │   ├── ConnectionAbortedError
+│   │   │   ├── ConnectionRefusedError
+│   │   │   └── ConnectionResetError
+│   │   ├── FileExistsError
+│   │   ├── FileNotFoundError
+│   │   ├── InterruptedError
+│   │   ├── IsADirectoryError
+│   │   ├── NotADirectoryError
+│   │   ├── PermissionError
+│   ├── ReferenceError
+│   ├── RuntimeError
+│   │   ├── NotImplementedError
+│   │   ├── RecursionError
+│   ├── SyntaxError
+│   │   ├── IndentationError
+│   ├── SystemError
+│   ├── TypeError
+│   ├── ValueError
+│   │   ├── UnicodeError
+│   │   │   ├── UnicodeDecodeError
+│   │   │   ├── UnicodeEncodeError
+│   │   │   └── UnicodeTranslateError
+│   ├── Warning
+│       ├── DeprecationWarning
+│       ├── PendingDeprecationWarning
+│       ├── RuntimeWarning
+│       ├── SyntaxWarning
+│       ├── UserWarning
+│       ├── FutureWarning
+│       ├── ImportWarning
+│       ├── UnicodeWarning
+│       ├── BytesWarning
+│       └── ResourceWarning
+

@@ -1,0 +1,9 @@
+An object that contains the information about the search and result.
+• The search() method of re module returns match object
+• It has the following properties and methods to retrieve information about the search and result:
+
+
+methods         Description
+span()          Returns a tuple containing the start-, and end positions of the match
+group()         Returns the part of the string where there was a match
+string          Returns the string passed into the function

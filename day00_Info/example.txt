@@ -1,0 +1,3 @@
+Hello, this is a sam
+Fifth line added by write()
+Sixth line.Seventh line.

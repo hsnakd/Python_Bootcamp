@@ -1,0 +1,78 @@
+# TODO: Import Statement:
+Assume you have a file named module.py:
+
+        # module.py
+        def greet(name):
+            return f"Hello, {name}!"
+
+        if __name__ == "__main__":
+            print("This is a module. Run it as a script.")
+
+
+Now, in another file, let's say main.py, you can use the import statement to access the functionalities of module.py:
+
+        # main.py
+        import module
+
+        message = module.greet("John")
+        print(message)
+
+
+
+# TODO: Define Alias for Import Statement:
+You can create an alias for the imported module to make it easier to use. Here, we import module.py with an alias m:
+
+        # main.py
+        import module as m
+
+        message = m.greet("Alice")
+        print(message)
+
+
+
+# TODO: From Keyword:
+The "from" keyword allows you to import specific parts of a module. For example, if module.py has additional functions besides greet, you can import only greet using the from keyword:
+
+        # main.py
+        from module import greet
+
+        message = greet("Bob")
+        print(message)
+
+In each case, you are reusing the functionality from module.py in your main.py file, but the syntax varies based on whether you use a simple import, define an alias, or use the from keyword to import specific parts.
+
+
+
+# TODO: NOTES
+
+# import utility
+
+from utility import sum, calculate  # similar to static import of java
+
+result = sum(10, 20)
+
+print(result)
+
+result = calculate(10, 200, '+')
+
+print(result)
+
+import utility
+
+utility.concat("Java", "Python")
+utility.sum(10, 20)
+utility.calculate(10, 30, "*")
+
+print('---------------------------------------------------------')
+
+import utility as u
+
+u.sum(10, 20)
+u.concat("A", 1, 2)
+u.calculate(20, 30, "/")
+
+print('---------------------------------------------------------')
+
+from utility import sum as s
+
+print( s(10, 20) )

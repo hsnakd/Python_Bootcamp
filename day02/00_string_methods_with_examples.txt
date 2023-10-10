@@ -1,0 +1,140 @@
+TODO:  # String Methods
+    • Python has a built-in string class named str
+    • The built-in string class (str) has a set of built-in methods that we can use
+    • A string object is immutable, methods of string cannot change the original string, therefore, they return new values
+
+
+capitalize(): Converts the first character of the string to uppercase.
+Example: "hello world".capitalize() returns "Hello world".
+
+casefold(): Returns a casefolded version of the string for case-insensitive comparisons.
+Example: "HELLO".casefold() returns "hello".
+
+center(width): Returns a centered string within a specified width.
+Example: "Python".center(10) returns " Python ".
+
+count(substring): Returns the number of occurrences of a substring in the string.
+Example: "banana".count("a") returns 3.
+
+encode(encoding): Returns an encoded version of the string using the specified encoding.
+Example: "hello".encode("utf-8") returns b'hello'.
+
+endswith(suffix): Checks if the string ends with a specified suffix.
+Example: "world".endswith("ld") returns True.
+
+expandtabs(tabsize): Expands tabs in the string to a specified number of spaces.
+Example: "tab\texample".expandtabs(4) returns "tab example".
+
+find(substring): Returns the lowest index of the substring in the string, or -1 if not found.
+Example: "hello".find("l") returns 2.
+
+format(*args, **kwargs): Formats the string using the supplied arguments and keyword arguments.
+Example: "{} {}".format("Hello", "world") returns "Hello world".
+
+format_map(mapping): Formats the string using a mapping of keys to values.
+Example: "My name is {name}".format_map({"name": "Alice"}) returns "My name is Alice".
+
+index(substring): Returns the lowest index of the substring in the string, or raises an error if not found.
+Example: "hello".index("e") returns 1.
+
+isalnum(): Checks if all characters in the string are alphanumeric.
+Example: "abc123".isalnum() returns True.
+
+isalpha(): Checks if all characters in the string are alphabetic.
+Example: "abc".isalpha() returns True.
+
+isascii(): Checks if all characters in the string are ASCII.
+Example: "hello".isascii() returns True.
+
+isdecimal(): Checks if all characters in the string are decimal.
+Example: "123".isdecimal() returns True.
+
+isdigit(): Checks if all characters in the string are digits.
+Example: "123".isdigit() returns True.
+
+isidentifier(): Checks if the string is a valid identifier.
+Example: "variable_name".isidentifier() returns True.
+
+islower(): Checks if all characters in the string are lowercase.
+Example: "hello".islower() returns True.
+
+isnumeric(): Checks if all characters in the string are numeric.
+Example: "123".isnumeric() returns True.
+
+isprintable(): Checks if all characters in the string are printable.
+Example: "Hello\nWorld".isprintable() returns False.
+
+isspace(): Checks if all characters in the string are whitespaces.
+Example: " ".isspace() returns True.
+
+istitle(): Checks if the string is in title case.
+Example: "Title Case".istitle() returns True.
+
+isupper(): Checks if all characters in the string are uppercase.
+Example: "HELLO".isupper() returns True.
+
+join(iterable): Joins the elements of an iterable with the string as a separator.
+Example: "-".join(["apple", "orange", "banana"]) returns "apple-orange-banana".
+
+ljust(width): Left-aligns the string within a specified width.
+Example: "hello".ljust(10) returns "hello ".
+
+lower(): Converts all characters in the string to lowercase.
+Example: "Hello".lower() returns "hello".
+
+lstrip(): Removes leading whitespaces from the string.
+Example: " hello".lstrip() returns "hello".
+
+maketrans(x[, y[, z]]): Returns a translation table for use in translate() method.
+Example: str.maketrans("aeiou", "12345") returns a translation table for vowel replacement.
+
+partition(separator): Splits the string at the first occurrence of the separator and returns a tuple.
+Example: "apple,orange,banana".partition(",") returns ("apple", ",", "orange,banana").
+
+replace(old, new): Replaces occurrences of a specified substring with another substring.
+Example: "Hello, World!".replace("Hello", "Hi") returns "Hi, World!".
+
+rfind(substring): Returns the highest index of the substring in the string, or -1 if not found.
+Example: "hello".rfind("l") returns 3.
+
+rindex(substring): Returns the highest index of the substring in the string, or raises an error if not found.
+Example: "hello".rindex("e") returns 1.
+
+rjust(width): Right-aligns the string within a specified width.
+Example: "hello".rjust(10) returns " hello".
+
+rpartition(separator): Splits the string at the last occurrence of the separator and returns a tuple.
+Example: "apple,orange,banana".rpartition(",") returns ("apple,orange", ",", "banana").
+
+rsplit([separator[, maxsplit]]): Splits the string from the right at the specified separator.
+Example: "apple orange banana".rsplit(" ", 1) returns ['apple orange', 'banana'].
+
+rstrip(): Removes trailing whitespaces from the string.
+Example: "hello ".rstrip() returns "hello".
+
+split([separator[, maxsplit]]): Splits the string at the specified separator.
+Example: "apple,orange,banana".split(",") returns ['apple', 'orange', 'banana'].
+
+splitlines([keepends]): Splits the string at line breaks and returns a list of lines.
+Example: "Hello\nWorld".splitlines() returns ['Hello', 'World'].
+
+startswith(prefix): Checks if the string starts with a specified prefix.
+Example: "Hello, World!".startswith("Hello") returns True.
+
+strip(): Removes leading and trailing whitespaces from the string.
+Example: " hello ".strip() returns "hello".
+
+swapcase(): Swaps the case of all characters in the string.
+Example: "Hello, World!".swapcase() returns "hELLO, wORLD!".
+
+title(): Converts the first character of each word to uppercase.
+Example: "hello world".title() returns "Hello World".
+
+translate(table): Applies a translation table to the string.
+Example: "hello".translate(str.maketrans("aeiou", "12345")) returns "h2ll4".
+
+upper(): Converts all characters in the string to uppercase.
+Example: "hello".upper() returns "HELLO".
+
+zfill(width): Pads the string with zeros on the left to a specified width.
+Example: "42".zfill(5) returns "00042".

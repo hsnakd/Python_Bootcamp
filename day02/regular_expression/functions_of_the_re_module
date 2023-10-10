@@ -1,0 +1,9 @@
+
+After importing re module, we can use the following set of functions to search from a string for a match:
+
+
+Function            Description
+findall()           Returns a list which containing all matches with the specified search pattern
+search()            Returns a Match Object if the specified search pattern is found anywhere in the string
+split()             Returns a list where the string has been split at each match
+sub()               Replaces one or many matches with a string

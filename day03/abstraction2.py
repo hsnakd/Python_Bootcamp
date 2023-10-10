@@ -1,0 +1,110 @@
+# Import necessary modules
+import math
+import numbers
+from abc import ABC, abstractmethod
+
+"""
+abc: module name (built in module)
+ABC: Abstract class in abc module
+abstractmethod: annotations that can be given to abstract methods
+"""
+
+
+# AbstractClass Abstraction
+
+# Define abstract class for volume
+class Volume(ABC):
+    @abstractmethod
+    def volume(self):
+        pass
+
+
+# Define abstract class for shapes
+class Shape(ABC):
+    def __init__(self):
+        self.name = type(self).__name__
+
+    @abstractmethod
+    def area(self) -> numbers.Number:
+        pass
+
+    def __str__(self):
+        return f'{type(self).__name__} {self.__dict__}'
+
+
+# Concrete classes for different shapes
+class Square(Shape):
+    def __init__(self, side):
+        super().__init__()
+        self.side = side
+
+    def area(self) -> numbers.Number:
+        return self.side * self.side
+
+
+class Circle(Shape):
+    def __init__(self, radius):
+        super().__init__()
+        self.radius = radius
+
+    def area(self) -> numbers.Number:
+        return math.pow(self.radius, 2) * math.pi
+
+
+class Rectangle(Shape):
+    def __init__(self, width, length):
+        super().__init__()
+        self.width = width
+        self.length = length
+
+    def area(self) -> numbers.Number:
+        return self.width * self.length
+
+
+class Cube(Shape, Volume):
+    def __init__(self, side):
+        super().__init__()
+        self.side = side
+
+    def area(self) -> numbers.Number:
+        return 6 * self.side * self.side
+
+    def volume(self):
+        return self.side ** 3
+
+
+class Cylinder(Shape, Volume):
+    def __init__(self, radius, height):
+        super().__init__()
+        self.radius = radius
+        self.height = height
+
+    def area(self) -> numbers.Number:
+        return 2 * math.pi * self.radius * (self.radius + self.height)
+
+    def volume(self):
+        return math.pi * self.radius ** 2 * self.height
+
+
+# Examples
+square1 = Square(5)
+print(square1)  # Output: Square {'name': 'Square', 'side': 5}
+print(square1.area())  # Output: 25
+
+circle1 = Circle(3)
+print(circle1)  # Output: Circle {'name': 'Circle', 'radius': 3}
+print(circle1.area())  # Output: 28.274333882308138
+
+rectangle1 = Rectangle(4, 6)
+print(rectangle1)  # Output: Rectangle {'name': 'Rectangle', 'width': 4, 'length': 6}
+print(rectangle1.area())  # Output: 24
+
+cube1 = Cube(3)
+print(cube1)  # Output: Cube {'name': 'Cube', 'side': 3}
+print(cube1.area())  # Output: 54
+print(cube1.volume())  # Output: 27
+
+cylinder1 = Cylinder(2, 5)
+print(cylinder1)  # Output: Cylinder {'name': 'Cylinder', 'radius': 2, 'height': 5}
+print(cylinder1.area())  # Output: 94.24777960769379
+print(cylinder1.volume())  # Output: 62.83185307179586

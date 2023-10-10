@@ -1,0 +1,48 @@
+TODO: Explanation for each string method in Python:
+TODO : Python Built-In Modules
+
+capitalize()                        : Converts the first character of the string to uppercase.
+casefold()                          : Returns a casefolded version of the string, suitable for case-insensitive comparisons.
+center(width)                       : Returns a centered string within a specified width.
+count(substring)                    : Returns the number of occurrences of a substring in the string.
+encode(encoding)                    : Returns an encoded version of the string using the specified encoding.
+endswith(suffix)                    : Checks if the string ends with a specified suffix.
+expandtabs(tabsize)                 : Expands tabs in the string to a specified number of spaces.
+find(substring)                     : Returns the lowest index of the substring in the string, or -1 if not found.
+format(*args, **kwargs)             : Formats the string using the supplied arguments and keyword arguments.
+format_map(mapping)                 : Formats the string using a mapping of keys to values.
+index(substring)                    : Returns the lowest index of the substring in the string, or raises an error if not found.
+isalnum()                           : Checks if all characters in the string are alphanumeric.
+isalpha()                           : Checks if all characters in the string are alphabetic.
+isascii()                           : Checks if all characters in the string are ASCII.
+isdecimal()                         : Checks if all characters in the string are decimal.
+isdigit()                           : Checks if all characters in the string are digits.
+isidentifier()                      : Checks if the string is a valid identifier.
+islower()                           : Checks if all characters in the string are lowercase.
+isnumeric()                         : Checks if all characters in the string are numeric.
+isprintable()                       : Checks if all characters in the string are printable.
+isspace()                           : Checks if all characters in the string are whitespaces.
+istitle()                           : Checks if the string is in title case.
+isupper()                           : Checks if all characters in the string are uppercase.
+join(iterable)                      : Joins the elements of an iterable (e.g., a list) with the string as a separator.
+ljust(width)                        : Left-aligns the string within a specified width.
+lower()                             : Converts all characters in the string to lowercase.
+lstrip()                            : Removes leading whitespaces from the string.
+maketrans(x[, y[, z]])              : Returns a translation table for use in translate() method.
+partition(separator)                : Splits the string at the first occurrence of the separator and returns a tuple.
+replace(old, new)                   : Replaces occurrences of a specified substring with another substring.
+rfind(substring)                    : Returns the highest index of the substring in the string, or -1 if not found.
+rindex(substring)                   : Returns the highest index of the substring in the string, or raises an error if not found.
+rjust(width)                        : Right-aligns the string within a specified width.
+rpartition(separator)               : Splits the string at the last occurrence of the separator and returns a tuple.
+rsplit([separator[, maxsplit]])     : Splits the string from the right at the specified separator.
+rstrip()                            : Removes trailing whitespaces from the string.
+split([separator[, maxsplit]])      : Splits the string at the specified separator.
+splitlines([keepends])              : Splits the string at line breaks and returns a list of lines.
+startswith(prefix)                  : Checks if the string starts with a specified prefix.
+strip()                             : Removes leading and trailing whitespaces from the string.
+swapcase()                          : Swaps the case of all characters in the string.
+title()                             : Converts the first character of each word to uppercase.
+translate(table)                    : Applies a translation table to the string.
+upper()                             : Converts all characters in the string to uppercase.
+zfill(width)                        : Pads the string with zeros on the left to a specified width.

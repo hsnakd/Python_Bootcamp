@@ -1,0 +1,17 @@
+# Abstraction
+
+    • Process of hiding the implementation details of functions from the user
+    • Only the functionality will be provided to the user
+    • The user will have the information on what the object does instead of how it does
+
+# How to Achieve Abstraction?
+    • There are two ways to achieve abstraction in python:
+
+        • Base class: includes common properties and methods of subclasses that will inherit, common methods will be declared without any implementations
+
+        • Abstract class: a class that inherits the ABC class, and it includes abstract methods that must be implemented by subclass(es). The class can not be instantiated
+
+
+• We can create methods with no implementation by giving the pass statements in the parent class’s methods that will be inherited to the child classes
+
+• We can inherit the ABC class from abc module to create abstract class to define abstract methods (a method without no implementation and meant to be overridden) that must be implemented to the subclass(es)

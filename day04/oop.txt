@@ -1,0 +1,17 @@
+Class and Object:
+    A class is a blueprint for creating objects, defining both attributes and methods.
+    An object is an instance of a class, representing a real-world entity with encapsulated data and behavior.
+Encapsulation:
+    Encapsulation bundles data and related methods into a single unit (class).
+    It restricts direct access to certain components, enhancing control over data modification and access.
+Inheritance:
+    Inheritance enables a class to inherit properties and methods from another class.
+    It promotes code re-usability and establishes a hierarchy between classes.
+Polymorphism:
+    Polymorphism allows objects to be treated as instances of their parent class.
+    It can be achieved through method overriding.
+    Your example demonstrates polymorphism with 3D shapes, where different classes have a common method name (volume).
+Abstraction:
+    Abstraction simplifies complex systems by hiding unnecessary details.
+    Abstract classes define a common interface with abstract methods to be implemented by concrete classes.
+    Your example uses abstraction to calculate the area of different shapes without knowing specific details.

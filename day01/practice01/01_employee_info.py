@@ -1,0 +1,26 @@
+"""
+1. Create a python file named employee_info. declare the following variables:
+                1. name
+                2. age
+                3. gender
+                4. company
+                5. jobTitle
+                6. yearsOfExperience
+                7. salary
+                8. is_fullTime
+                9. is_married
+                10. employee_id
+"""
+
+name = 'Hasan'
+age = 39
+gender = 'M'
+company = 'OpenlyCRM'
+job_title = 'SDET'
+yearsOfExperience = 1.5
+salary = 2000
+is_fullTime = True
+is_married = False
+employee_id = 1234567890
+
+print(name, age)

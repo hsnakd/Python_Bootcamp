@@ -1,0 +1,122 @@
+Sets in Python:
+
+Definition:
+    A set is a special type of variable in Python.
+    It is used to store multiple unique values.
+    The size of a set is dynamic and can be increased or decreased.
+    The elements in a set are unchangeable.
+    Elements in a set do not have index numbers.
+
+Creating Sets:
+
+    Created by placing elements inside curly brackets {} separated by commas.
+    Elements in the set are unordered, unchangeable, and can be of any data type.
+    The set does not accept duplicate elements.
+
+        Example:
+        items = {"A", "B", "A", "C"}
+        print(items)  # Output: {"C", "B", "A"}
+
+        numbers = {10, 20, 30, 10, 40}
+        print(numbers)  # Output: {40, 10, 20, 30}
+
+        empty_dictionary = {}
+        print(type(empty_dictionary))       # Output: <class 'dict'>
+
+        empty_set = set()
+        print(type(empty_set))              # Output: <class 'set'>
+
+Set Comprehensions:
+
+    Used to create a new set based on the values of an existing iterable (set/list/tuple).
+    Syntax:
+
+        new_set = {var_name for var_name in iterable if condition}
+
+        var_name: Variable that represents each element.
+        iterable: List, tuple, or set from which values are taken.
+        condition: Filtering condition for the elements.
+
+        for, in, if     :   keyword
+        var_name        :   must be same
+        iterable        :   must be a List/Tuple/Set
+        if condition    :   condition for filtering the elements of the iterable
+
+
+
+Set Methods
+    add(): Adds an element to the set.
+        fruits = {"apple", "banana", "orange"}
+        fruits.add("kiwi")
+        print(fruits)  # Output: {'banana', 'kiwi', 'apple', 'orange'}
+
+    remove(): Removes the specified element.
+        fruits = {"apple", "banana", "orange"}
+        fruits.remove("banana")
+        print(fruits)  # Output: {'apple', 'orange'}
+
+    clear(): Removes all elements from the set.
+        fruits = {"apple", "banana", "orange"}
+        fruits.clear()
+        print(fruits)  # Output: set()
+
+    update(): Updates the set with another set or iterable.
+        set1 = {1, 2, 3}
+        set2 = {3, 4, 5}
+        set1.update(set2)
+        print(set1)  # Output: {1, 2, 3, 4, 5}
+
+    pop(): Removes and returns an arbitrary element.
+        fruits = {"apple", "banana", "orange"}
+        removed_fruit = fruits.pop()
+        print(removed_fruit)  # Output: a randomly selected element, e.g., 'banana'
+        print(fruits)  # Output: The set without the popped element
+
+    copy(): Returns a copy of the set.
+        original_set = {1, 2, 3}
+        copy_set = original_set.copy()
+        print(copy_set)  # Output: {1, 2, 3}
+
+
+    difference(): Returns the difference of two sets.
+        set1 = {1, 2, 3, 4}
+        set2 = {3, 4, 5, 6}
+        difference_set = set1.difference(set2)
+        print(difference_set)  # Output: {1, 2}
+
+    intersection(): Returns the intersection of two sets.
+        set1 = {1, 2, 3, 4}
+        set2 = {3, 4, 5, 6}
+        intersection_set = set1.intersection(set2)
+        print(intersection_set)  # Output: {3, 4}
+
+    difference_update(): Removes the items in this set that are also present in another set.
+        set1 = {1, 2, 3, 4}
+        set2 = {3, 4, 5, 6}
+        set1.difference_update(set2)
+        print(set1)  # Output: {1, 2}
+
+    intersection_update(): Updates the set with the intersection of itself and another set.
+        set1 = {1, 2, 3, 4}
+        set2 = {3, 4, 5, 6}
+        set1.intersection_update(set2)
+        print(set1)  # Output: {3, 4}
+
+    symmetric_difference_update(): Updates the set with the symmetric difference of itself and another set.
+        set1 = {1, 2, 3, 4}
+        set2 = {3, 4, 5, 6}
+        set1.symmetric_difference_update(set2)
+        print(set1)  # Output: {1, 2, 5, 6}
+
+    symmetric_difference(): Compares two sets and returns a new set which contains all elements except the common once
+
+        e1 = {'Apple', 'Banana', 'Cherry'}
+        e2 = {'Grape', 'Strawberry', 'Banana', 'Mango', 'Lemon', 'Apple'}
+
+        e3 = e1.symmetric_difference(e2)
+        print(e3)        # Output: {'Lemon', 'Cherry', 'Strawberry', 'Grape', 'Mango'}
+
+TODO: Both symmetric_difference_update() and symmetric_difference() methods achieve the same result,
+      but symmetric_difference() returns a new set without modifying the original sets,
+      while symmetric_difference_update() modifies the original set in place.
+      Depending on your use case, you can choose the one that suits your needs.

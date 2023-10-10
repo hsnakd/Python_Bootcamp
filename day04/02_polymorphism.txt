@@ -1,0 +1,99 @@
+Polymorphism in Python:
+
+Definition:
+
+Polymorphism is the ability of an object to take on many forms.
+It allows objects of different classes to be treated as the same type.
+
+Requirements:
+The inheritance relationship between those different classes is required.
+
+Implementation:
+Polymorphism is often achieved through method overriding, where a subclass provides a specific implementation of a method that is already provided by its superclass.
+
+Example:
+If you have a base class Shape and subclasses like Circle and Rectangle, you can treat both Circle and Rectangle objects as Shape objects.
+
+
+                class Shape:
+                    def draw(self):
+                        # Common implementation for all shapes
+
+                class Circle(Shape):
+                    def draw(self):
+                        # Specific implementation for circles
+
+                class Rectangle(Shape):
+                    def draw(self):
+                        # Specific implementation for rectangles
+
+
+Usage of Polymorphism:
+
+Method Parameters:
+You can use polymorphism in method parameters.
+For example, if a method takes a Shape parameter, it can accept any object that is a subclass of Shape.
+
+
+                def draw_shape(shape):
+                    shape.draw()  # Calls the appropriate draw method based on the actual type of the object (polymorphism).
+
+
+Common Methods and Variables:
+Polymorphism allows you to use common methods and variables of all the different shape objects.
+
+
+                circle = Circle()
+                rectangle = Rectangle()
+
+                circle.draw()    # Calls the draw method of Circle
+                rectangle.draw()  # Calls the draw method of Rectangle
+
+
+
+Exception Handling in Python:
+
+You've also mentioned exception handling in Python, which is crucial for dealing with unexpected events. Here's a brief summary:
+
+try & except:
+    Used to handle exceptions.
+    try block contains statements that might cause an exception.
+    except block contains statements to handle the exception.
+
+                try:
+                    # try block statements
+                except ExceptionType:
+                    # except block statements
+
+else:
+An optional block that gets executed if no exception occurs in the try block.
+
+
+                try:
+                    # try block statements
+                except ExceptionType:
+                    # except block statements
+                else:
+                    # else block statements
+
+
+finally:
+An optional block that always gets executed after try & except blocks, whether an exception occurs or not.
+
+
+                try:
+                    # try block statements
+                except ExceptionType:
+                    # except block statements
+                else:
+                    # else block statements
+                finally:
+                    # finally block statements
+
+
+
+Raise an Exception:
+You can manually throw an exception using the raise keyword.
+
+                if something_went_wrong:
+                    raise SomeException("Something went wrong")

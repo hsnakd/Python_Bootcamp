@@ -1,0 +1,11 @@
+Character       Description
+\A              Returns a match if the specified characters are at the beginning of string
+\z              Returns a match if the specified characters are at the end of string
+\b              Returns a match where the specified characters are at the beginning or at the end of a word
+\B              Returns a match where the specified characters are present at any where but at the beginning or the end of a word
+\d              Returns a match where the string contains digits
+\D              Returns a match where the string does not contain digits
+\s              Returns a match where the string contains space character
+\S              Returns a match where the string does not contain space character
+\w              Returns a match where the string contains word characters   (a ~ Z, A~Z, 0~9, and the underscore _ character)
+\W              Returns a match where the string does not contain any word characters

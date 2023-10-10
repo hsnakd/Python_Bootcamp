@@ -1,0 +1,39 @@
+**********************************************************************************************
+* Access Modifier	|   Same Class   |   Same Package   |   Sub Class   |    Other Packages  *
+*-------------------|----------------|------------------|---------------|--------------------*
+* Public	        |   ✅           |   ✅             |	✅          |    ✅              *
+* ------------------|----------------|------------------|---------------|--------------------*
+* Protected(_)	    |   ✅	         |   ✅	            |   ✅	        |    ❌              *
+*-------------------|----------------|------------------|---------------|--------------------*
+* Private (__)      |   ✅	         |   ❌	            |   ❌	        |    ❌              *
+**********************************************************************************************
+
+TODO : Public:
+    Accessible from anywhere, both within the same class and from outside.
+
+class MyClass:
+    public_variable = "I'm public!"
+
+
+TODO : Protected (_):
+Accessible within the same class, within the same package/module, and by subclasses.
+
+class MyClass:
+    _protected_variable = "I'm protected!"
+
+
+TODO : Private (__):
+Accessible only within the same class.
+
+class MyClass:
+    __private_variable = "I'm private!"
+And regarding the access table you provided:
+
+
+
+"Same class" means within the class where the attribute/method is defined.
+"Same package" implies the same module or package.
+"Subclass" is, of course, a class that inherits from another class.
+"Other Packages" are classes outside the current module or package.
+
+

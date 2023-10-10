@@ -1,0 +1,144 @@
+Dictionary
+
+    A dictionary is a dynamic data structure consisting of key-value pairs.
+    It allows for a flexible adjustment of size.
+    The items within a dictionary are mutable.
+    Each value is associated with a unique key, crucial for accessing the dictionary's values.
+
+Creating Dictionary
+
+    Formed by enclosing pairs within curly brackets {key: value}, separated by commas.
+    Items are ordered, changeable, and can have various data types.
+    Duplicate keys are not allowed.
+
+        my_dict = {'name': 'John', 'age': 25, 'city': 'New York'}
+
+
+Adding Pairs
+
+    • After the dictionary is created, we can choose to add extra pairs to increase the size (After creation, extra pairs can be added by assigning a value to a new key.)
+    • To add a pair into the dictionary, we give new index key by using square brackets and assign a value to it. [new key] = value (Utilize square brackets for indexing: my_dict[new_key] = value)
+
+        my_dict['occupation'] = 'Engineer'
+
+
+Updating Pairs
+
+    • Pairs in dictionaries are changeable and we can change the value of any pair (Values in the dictionary can be modified.)
+    • To change the value of a pair in the dictionary, we give index key of the pair by using square brackets and assign the new value to it. [ key ] = new value (Change the value by referencing the key: my_dict[key] = new_value)
+
+        my_dict['age'] = 26
+
+
+Dictionary Methods
+    get(): Retrieve the value for a given key.
+
+        # Example
+            age = my_dict.get('age', 'Not available')
+            print(age)  # Output: 26
+
+            # If key is not present
+            salary = my_dict.get('salary', 'Not available')
+            print(salary)  # Output: Not available
+
+
+    update(): Update the dictionary with key-value pairs from another dictionary.
+
+        # Example
+            additional_info = {'gender': 'Male', 'salary': 50000}
+            my_dict.update(additional_info)
+            print(my_dict)
+            # Output: {'name': 'John', 'age': 26, 'city': 'New York', 'occupation': 'Engineer', 'gender': 'Male', 'salary': 50000}
+
+
+    pop(): Remove and return the value for a specified key.
+
+        # Example
+            removed_age = my_dict.pop('age')
+            print(removed_age)  # Output: 26
+            print(my_dict)
+            # Output: {'name': 'John', 'city': 'New York', 'occupation': 'Engineer', 'gender': 'Male', 'salary': 50000}
+
+
+    popitem(): Remove and return an arbitrary key-value pair.
+
+        # Example
+            removed_item = my_dict.popitem()
+            print(removed_item)  # Output: ('salary', 50000)
+            print(my_dict)
+            # Output: {'name': 'John', 'city': 'New York', 'occupation': 'Engineer', 'gender': 'Male'}
+
+    clear(): Remove all items from the dictionary.
+
+        # Example
+            my_dict.clear()
+            print(my_dict)  # Output: {}
+
+    copy(): Create a shallow copy of the dictionary.
+
+        # Example
+            my_dict_copy = my_dict.copy()
+            print(my_dict_copy)
+            # Output: {'name': 'John', 'city': 'New York', 'occupation': 'Engineer', 'gender': 'Male'}
+
+
+    keys(): Return a list of all keys.
+
+        # Example
+            keys_list = my_dict.keys()
+            print(keys_list)  # Output: dict_keys(['name', 'city', 'occupation', 'gender'])
+
+
+    values(): Return a list of all values.
+
+        # Example
+            values_list = my_dict.values()
+            print(values_list)  # Output: dict_values(['John', 'New York', 'Engineer', 'Male'])
+
+
+    items(): Return a list of key-value tuples.
+
+        # Example
+            items_list = my_dict.items()
+            print(items_list)
+            # Output: dict_items([('name', 'John'), ('city', 'New York'), ('occupation', 'Engineer'), ('gender', 'Male')])
+
+
+
+Nested Dictionary
+
+    • The value of a specific key in the dictionary can be a tuple, list, set, or a dictionary
+
+        nested_dict = {'person': {'name': 'Alice', 'age': 30, 'address': {'city': 'London', 'zipcode': 'SW1A'}}}
+
+        students = {
+            'A01': {
+                'name': 'James',
+                'gender': 'Male',
+                'gpa': 3.5,
+                'subjects': ['Math', 'Physics']
+            },
+
+            'A02': {
+                'name': 'Hazel',
+                'gender': 'Female',
+                'gpa': 3.8,
+                'subjects': ['Biology', 'Programming']
+            },
+
+            'A03': {
+                'name': 'Yulia',
+                'gender': 'Female',
+                'gpa': 4,
+                'subjects': ['Chemistry', 'Programming']
+            }
+        }
+
+        print(students)
+
+
+        # Output:
+            # {'A01': {'name': 'James', 'gender': 'Male', 'gpa': 3.5, 'subjects': ['Math', 'Physics']},
+            #  'A02': {'name': 'Hazel', 'gender': 'Female', 'gpa': 3.8, 'subjects': ['Biology', 'Programming']},
+            #  'A03': {'name': 'Yulia', 'gender': 'Female', 'gpa': 4, 'subjects': ['Chemistry', 'Programming']}}
+

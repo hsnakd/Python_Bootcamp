@@ -1,0 +1,48 @@
+TODO : What is Encapsulation
+
+    • An object hides its internal data from code that’s outside the class
+    • Hide an attribute by giving private access modifier, and making the methods that access those fields public
+    • These public methods are called getters & setters (accessor and mutator)
+
+        • private  : When the private access modifier is applied to a class member, the member can not be accessed by code outside the class.
+        • public   : When the public access modifier is applied to a class member, the member can be accessed by code inside the class or outside.
+
+    • The private access modifier can be given by giving two underscores (__) to the attributes to make them inaccessible from outside the class
+
+TODO : Getters & Setters
+
+    • The getter is used for reading the private data (instance variable) only
+    • The setter is used for writing (modifying) the private data (instance variable) only
+    • Allows the class to have complete control over what is stored in its fields
+
+TODO : Getter Method
+
+    • A public instance method used for reading the private data (instance variable) only.(returns the private instance variable’s value)
+    • Does not pass any parameter
+    • Provides controlled access to private attributes.
+
+
+TODO : Setter Method
+
+    • A public instance method used for writing (modifying) the private data (instance variable) only. (does not return any value)
+    • It passes a parameter and assigns the given argument to the private attributes.
+    • Ensures controlled modification of private attributes.
+
+
+
+    class Circle:
+    def __init__(self, radius):
+        self.__radius = radius  # private attribute
+
+    def get_radius(self):
+        return self.__radius  # getter method
+
+    def set_radius(self, radius):
+        if radius > 0:
+            self.__radius = radius  # setter method
+        else:
+            print("Radius must be greater than zero.")
+
+
+
+
