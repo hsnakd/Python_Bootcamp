@@ -1,4 +1,9 @@
 import os
+# Text.txt ==> Right Click --> Copy Path/Reference --> Absolute Path
+absolute_path = '/Users/HSN/PycharmProjects/Python_BootCamp/day04/files/Test.txt'
+# Text.txt ==> Right Click --> Copy Path/Reference --> Path From Content Root
+content_root = 'day04/files/Test.txt'
+
 
 # read() : reads the entire content of the file.
 path = 'files/Test.txt'
