@@ -50,7 +50,7 @@ json_file.close()
 
 json_file2 = open('files/Test2.json', 'w')
 print(json.dumps(dictionary))
-json_object = json.dumps(dictionary)
+json_object = json.dumps(dictionary)         # converting dictionary object to json object
 
 json_file2.write(json_object)
 
