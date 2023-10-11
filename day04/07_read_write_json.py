@@ -39,7 +39,9 @@ json_file.close()
 output_file_path = 'files/Test2.json'
 with open(output_file_path, 'w') as json_file2:
     # Convert dictionary to JSON string with indentation
-    json_object = json.dumps(data_dict, indent=3) # indent parameter ensures that the content in the file is formatted with an indentation of number (3) of spaces.
+    json_object = json.dumps(data_dict, indent=3)
+    # dumps() :converting dictionary object to json object
+    # indent parameter : ensures that the content in the file is formatted with an indentation of number (3) of spaces.
 
     # Write the JSON string to the file
     json_file2.write(json_object)
@@ -106,3 +108,18 @@ print(json_object)
     #       ]
     #    }
     # }
+
+
+"""
+Web Automation:
+    BeautifulSoup4
+    request
+    pytest
+    robot
+
+Web Development:
+    Django
+    FastAPI
+    flask
+    ...
+"""
