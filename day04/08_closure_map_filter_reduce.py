@@ -32,7 +32,7 @@ print("Map result:", list(squared))  # Output: Map result: [1, 4, 9, 16, 25]
 
 # filter() example
 even_numbers = filter(lambda x: x % 2 == 0, numbers)
-print("Filter result:", list(even_numbers))  # Output: Reduce result: 120
+print("Filter result:", list(even_numbers))  # Output: Filter result: [2, 4]
 # In this example, the filter() function keeps only the even numbers from the numbers list.
 
 
@@ -42,5 +42,5 @@ print("Filter result:", list(even_numbers))  # Output: Reduce result: 120
 
 # reduce() example
 product = reduce(lambda x, y: x * y, numbers)
-print("Reduce result:", product)  # Output: 120 (1 * 2 * 3 * 4 * 5)
+print("Reduce result:", product)  # Output: Reduce result: 120 (1 * 2 * 3 * 4 * 5)
 # In this example, the reduce() function multiplies each element in the numbers list sequentially.

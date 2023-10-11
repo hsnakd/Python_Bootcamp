@@ -56,12 +56,14 @@ print(dictionary)
 print('-----------------------filter------------------------')
 
 nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+# nums = [ x for x in nums if x % 5 ==0]
 nums = list(filter(lambda x: x % 5 == 0, nums))
 print(nums)
 # Output: [5, 10, 15]
 
 
 names = ['Java', 'JAVA', 'java', 'ruby', 'swift', 'CyDeO', 'javaSCRipt']
+# names = [a for a in names if not a.lower().startswith('j')]
 names = list(filter(lambda x: not str(x).lower().startswith('j'), names))
 print(names)
 # Output: ['ruby', 'swift', 'CyDeO']
